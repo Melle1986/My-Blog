@@ -1,0 +1,117 @@
+:root {
+    font-size: 10px;
+  }
+  
+  body {
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: rgb(241, 241, 241);
+  }
+  
+  .container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: repeat(3, 200px) repeat(2, 150px) 100px 200px;
+    gap: 20px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+    grid-column: 1 / 3;
+    background-color: white;
+  }
+  
+  .blog1 {
+    grid-row: 2 / 4;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  .blog1,
+  .blog2 {
+    overflow: auto;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .blog1 img,
+  .blog2 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .blog2 {
+    grid-row: 4 / 7;
+    padding: 10px;
+    background-color: white;
+    font-size: 2rem;
+  }
+  
+  .blog1 h3,
+  .blog2 h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+  
+  .popularposts,
+  .aboutme,
+  .followme {
+    padding: 10px;
+  }
+  
+  .aboutme {
+    grid-row: 2 / 3;
+    background-color: white;
+    font-size: 1.5rem;
+  }
+  
+  .aboutme img {
+    height: 5.2vh;
+    display: block;
+    padding: 1px;
+  }
+  
+  .popularposts {
+    grid-row: 3 / 5;
+    background-color: white;
+  }
+  
+  .popularposts img {
+    height: 70px;
+    width: 150px;
+    object-fit: cover;
+    display: block;
+    padding: 1px;
+  }
+  
+  .followme {
+    grid-row: 5 / 6;
+    background-color: white;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: rgb(221, 221, 221);
+    grid-row: 7 / 8;
+    grid-column: 1 / 3;
+  }
